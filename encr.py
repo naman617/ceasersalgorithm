@@ -29,12 +29,12 @@ def decrypt(str, shift):
 #driver code to get input from the user and get output from the functions
 #we use if and elif loops to give the user the choice of encrypting or decrypting the text
 c = input("if you want to encrypt press e,if u want to decrypt press d ")
-if c == 'e':                                 #loop to send control to encrypt function
+if c == 'e':                                                                #loop to send control to encrypt function
     text = input("enter string: ")
     s = int(input("enter shift number: "))
     print("original string: ", text)
     print("after encryption: ", encrypt(text, s))
-elif c == 'd':                              #loop to send control to decrypt function
+elif c == 'd':                                                               #loop to send control to decrypt function
     text = input("enter encrypted text: ")
     s = int(input("enter shift number: "))
     print("encrypted text: ", text)
